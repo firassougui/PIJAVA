@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="715.0" prefWidth="1293.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.EvenementbackController">
+   <children>
+      <TableView fx:id="table" layoutX="204.0" layoutY="101.0" prefHeight="359.0" prefWidth="1024.0" style="-fx-background-color: #fbb700;">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="employeur" prefWidth="87.0" text="employeur" />
+            <TableColumn fx:id="type" prefWidth="71.0" text="type" />
+            <TableColumn fx:id="titre" prefWidth="93.0" text="titre" />
+            <TableColumn fx:id="nombre_par" prefWidth="106.0" text="nombre par" />
+            <TableColumn fx:id="date_start" prefWidth="104.79998779296875" text="Date debut" />
+            <TableColumn fx:id="date_end" prefWidth="103.99993896484375" text="Date Fin" />
+            <TableColumn fx:id="dsec" prefWidth="120.0" text="description" />
+            <TableColumn fx:id="image" prefWidth="120.0" text="image" />
+         </columns>
+      </TableView>
+      <Pane layoutX="7.0" prefHeight="705.0" prefWidth="197.0" style="-fx-background-color: #333333;" stylesheets="@styles.css">
+         <children>
+            <Button fx:id="Gtypeevent" layoutY="240.0" mnemonicParsing="false" onAction="#typeevent" prefHeight="43.0" prefWidth="189.0" styleClass="login2" stylesheets="@styles.css" text="type des evenement" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="95.0" fitWidth="162.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../image/logo.png" />
+               </image>
+               <styleClass>
+                  <String fx:value="envoyer_btn" />
+                  <String fx:value="content-area-circle-btns" />
+                  <String fx:value="img" />
+               </styleClass>
+            </ImageView>
+            <Button fx:id="Ghome" layoutX="3.0" layoutY="149.0" mnemonicParsing="false" onAction="#Ghome" prefHeight="43.0" prefWidth="189.0" style="-fx-background-color: FFCC00;" styleClass="login3" stylesheets="@styles.css" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="Gevent" layoutY="290.0" mnemonicParsing="false" onAction="#event" prefHeight="43.0" prefWidth="189.0" styleClass="login2" stylesheets="@styles.css" text="evenement" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Button fx:id="ajouter" layoutX="274.0" layoutY="528.0" mnemonicParsing="false" onAction="#addCateg" styleClass="login2" stylesheets="@styles.css" text="ajouter" />
+      <Button fx:id="sup" layoutX="415.0" layoutY="528.0" mnemonicParsing="false" onAction="#delCateg" styleClass="login2" stylesheets="@styles.css" text="supprimer" />
+      <Button layoutX="646.0" layoutY="528.0" mnemonicParsing="false" onAction="#modif" styleClass="login2" stylesheets="@styles.css" text="modifier" />
+      <Button fx:id="exit" layoutX="1093.0" layoutY="565.0" mnemonicParsing="false" onAction="#exit" styleClass="login2" stylesheets="@styles.css" text="retour" />
+   </children>
+</AnchorPane>

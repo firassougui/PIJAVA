@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="697.0" prefWidth="1088.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.TypeeventbackController">
+   <children>
+      <TableView fx:id="table" layoutX="197.0" layoutY="169.0" prefHeight="329.0" prefWidth="891.0" style="-fx-background-color: #fbb700;" stylesheets="@table.css">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="75.20001220703125" text="ID" />
+            <TableColumn fx:id="type" onEditCommit="#changelabel" prefWidth="301.0" text="type" />
+            <TableColumn fx:id="description" onEditCommit="#changelabel1" prefWidth="427.0" text="description" />
+         </columns>
+      </TableView>
+      <Button fx:id="trier" layoutX="834.0" layoutY="605.0" mnemonicParsing="false" text="trier" />
+      <Button fx:id="retour" layoutX="827.0" layoutY="605.0" mnemonicParsing="false" onAction="#retour" styleClass="login2" stylesheets="@styles.css" text="retour" />
+      <Pane layoutY="2.0" prefHeight="705.0" prefWidth="197.0" style="-fx-background-color: #333333;" stylesheets="@styles.css">
+         <children>
+            <Button fx:id="Gtypeevent" layoutY="240.0" mnemonicParsing="false" onAction="#typeevent" prefHeight="43.0" prefWidth="189.0" styleClass="login2" stylesheets="@styles.css" text="type des evenement" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="95.0" fitWidth="162.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../image/logo.png" />
+               </image>
+               <styleClass>
+                  <String fx:value="envoyer_btn" />
+                  <String fx:value="content-area-circle-btns" />
+                  <String fx:value="img" />
+               </styleClass>
+            </ImageView>
+            <Button fx:id="Ghome" layoutX="3.0" layoutY="149.0" mnemonicParsing="false" onAction="#Ghome" prefHeight="43.0" prefWidth="189.0" style="-fx-background-color: FFCC00;" styleClass="login3" stylesheets="@styles.css" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="Gevent" layoutY="283.0" mnemonicParsing="false" onAction="#event" prefHeight="43.0" prefWidth="189.0" styleClass="login2" stylesheets="@styles.css" text="evenement" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Button fx:id="ajouter" layoutX="281.0" layoutY="587.0" mnemonicParsing="false" onAction="#addCateg" styleClass="login2" stylesheets="@styles.css" text="ajouter" />
+      <Button fx:id="sup" layoutX="422.0" layoutY="587.0" mnemonicParsing="false" onAction="#delCateg" styleClass="login2" stylesheets="@styles.css" text="supprimer" />
+   </children>
+</AnchorPane>
