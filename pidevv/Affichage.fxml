@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="490.0" prefWidth="402.0" style="-fx-background-color: #18191a;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pidevv.AffichageController">
+   <children>
+      <TextField fx:id="txrecherche" layoutX="80.0" layoutY="38.0" prefHeight="25.0" prefWidth="236.0" promptText="Recherche par titre" style="-fx-background-color: white;">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <TableView fx:id="table" layoutY="158.0" prefHeight="230.0" prefWidth="412.0">
+        <columns>
+          <TableColumn fx:id="tb_titre" prefWidth="120.0" text="Titre" />
+          <TableColumn fx:id="tb_des" minWidth="5.0" prefWidth="274.0" text="Descirption" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
