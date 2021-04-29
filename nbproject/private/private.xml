@@ -3,22 +3,50 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/wamp64/www/findjob/src/gui/AddOpport.fxml</file>
+            <file>file:/C:/wamp64/www/findjob/src/gui/EtatDemande.fxml</file>
             <file>file:/C:/wamp64/www/findjob/src/services/TypeEventCRUD.java</file>
-            <file>file:/C:/wamp64/www/findjob/src/entities/evenement.java</file>
             <file>file:/C:/wamp64/www/findjob/src/gui/AjoutertypeeventController.java</file>
-            <file>file:/C:/wamp64/www/findjob/src/gui/listePar.fxml</file>
             <file>file:/C:/wamp64/www/findjob/src/gui/ListeParController.java</file>
-            <file>file:/C:/wamp64/www/findjob/src/services/EvenementCRUD.java</file>
+            <file>file:/C:/wamp64/www/findjob/src/gui/AjouterCandidature.fxml</file>
             <file>file:/C:/wamp64/www/findjob/src/tests/MainClass.java</file>
-            <file>file:/C:/wamp64/www/findjob/src/gui/startpoint.java</file>
+            <file>file:/C:/wamp64/www/findjob/src/gui/AjouterOffre.java</file>
+            <file>file:/C:/wamp64/www/findjob/src/gui/AjouterCandidatureController.java</file>
             <file>file:/C:/wamp64/www/findjob/src/entities/Participation.java</file>
             <file>file:/C:/wamp64/www/findjob/src/gui/AddeventController.java</file>
-            <file>file:/C:/wamp64/www/findjob/src/tools/ControlleSaisie.java</file>
+            <file>file:/C:/wamp64/www/findjob/src/services/CandidatureCrud.java</file>
+            <file>file:/C:/wamp64/www/findjob/src/gui/AddOpportController.java</file>
+            <file>file:/C:/wamp64/www/findjob/src/gui/UpdeventController.java</file>
             <file>file:/C:/wamp64/www/findjob/src/gui/EvenementbackController.java</file>
-            <file>file:/C:/wamp64/www/findjob/src/gui/BackController.java</file>
             <file>file:/C:/wamp64/www/findjob/src/services/ParticipationCRUD.java</file>
+            <file>file:/C:/wamp64/www/findjob/src/gui/EtatDemandeController.java</file>
+            <file>file:/C:/wamp64/www/findjob/src/gui/DebutStartOffre.java</file>
+            <file>file:/C:/wamp64/www/findjob/src/entities/Candidature.java</file>
+            <file>file:/C:/wamp64/www/findjob/src/gui/StatisController.java</file>
+            <file>file:/C:/wamp64/www/findjob/src/edu/PIDev/JavaFx/AddOpportController.java</file>
+            <file>file:/C:/wamp64/www/findjob/src/gui/StartOffreController.java</file>
+            <file>file:/C:/wamp64/www/findjob/src/gui/Statis.fxml</file>
+            <file>file:/C:/wamp64/www/findjob/src/gui/AjouterOffreController.java</file>
+            <file>file:/C:/wamp64/www/findjob/src/entities/evenement.java</file>
+            <file>file:/C:/wamp64/www/findjob/src/services/EvenementCRUD.java</file>
+            <file>file:/C:/wamp64/www/findjob/src/gui/Sta.java</file>
+            <file>file:/C:/wamp64/www/findjob/src/services/OpportuniteCrud.java</file>
+            <file>file:/C:/wamp64/www/findjob/src/gui/startpoint.java</file>
+            <file>file:/C:/wamp64/www/findjob/src/edu/PIDev/JavaFx/AddOpport.fxml</file>
+            <file>file:/C:/wamp64/www/findjob/src/edu/PIDev/JavaFx/Debut.java</file>
+            <file>file:/C:/wamp64/www/findjob/src/gui/MiseAjourCand.fxml</file>
+            <file>file:/C:/wamp64/www/findjob/src/gui/AjouterCandidature.java</file>
+            <file>file:/C:/wamp64/www/findjob/src/gui/ajouterOffre.fxml</file>
+            <file>file:/C:/wamp64/www/findjob/src/gui/MiseAjourCandController.java</file>
+            <file>file:/C:/wamp64/www/findjob/src/gui/StartOffre.fxml</file>
+            <file>file:/C:/wamp64/www/findjob/src/gui/BackController.java</file>
+            <file>file:/C:/wamp64/www/findjob/src/edu/PIDev/JavaFx/AjouterOffreController.java</file>
             <file>file:/C:/wamp64/www/findjob/src/entities/TypeEvent.java</file>
+            <file>file:/C:/wamp64/www/findjob/src/tools/Myconnect.java</file>
             <file>file:/C:/wamp64/www/findjob/src/gui/AfficherevenementController.java</file>
+            <file>file:/C:/wamp64/www/findjob/src/entities/Opportunite.java</file>
+            <file>file:/C:/wamp64/www/findjob/src/entities/mailing.java</file>
+            <file>file:/C:/wamp64/www/findjob/src/gui/MiseCand.java</file>
         </group>
     </open-files>
 </project-private>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="Pane" prefHeight="704.0" prefWidth="1299.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MiseAjourCandController">
+   <children>
+      <BorderPane fx:id="mainpain" prefHeight="200.0" prefWidth="200.0" />
+      <Pane layoutY="-1.0" prefHeight="705.0" prefWidth="197.0" style="-fx-background-color: #333333;" stylesheets="">
+         <children>
+            <Button fx:id="Gtypeevent" layoutY="240.0" mnemonicParsing="false" onAction="#typeevent" prefHeight="43.0" prefWidth="189.0" styleClass="login2" stylesheets="" text="type des evenement" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="95.0" fitWidth="162.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../image/logo.png" />
+               </image>
+               <styleClass>
+                  <String fx:value="envoyer_btn" />
+                  <String fx:value="content-area-circle-btns" />
+                  <String fx:value="img" />
+               </styleClass>
+            </ImageView>
+            <Button fx:id="Ghome" layoutX="3.0" layoutY="149.0" mnemonicParsing="false" onAction="#Ghome" prefHeight="43.0" prefWidth="189.0" style="-fx-background-color: FFCC00;" styleClass="login3" stylesheets="" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="Gevent" layoutY="290.0" mnemonicParsing="false" onAction="#event" prefHeight="43.0" prefWidth="189.0" styleClass="login2" stylesheets="" text="evenement" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="Offre" layoutY="340.0" mnemonicParsing="false" onAction="#GestionOffre" prefHeight="43.0" prefWidth="189.0" styleClass="login2" stylesheets="" text="Gestion des Offres" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="Gevent1" layoutY="389.0" mnemonicParsing="false" onAction="#GestionCandidature" prefHeight="43.0" prefWidth="189.0" styleClass="login2" stylesheets="" text="Gestions des Candiatures" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="Gevent11" layoutY="438.0" mnemonicParsing="false" onAction="#Contact" prefHeight="43.0" prefWidth="189.0" styleClass="login2" stylesheets="" text="Contacter Employer" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="Gevent1111" layoutX="-1.0" layoutY="487.0" mnemonicParsing="false" onAction="#Statistique" prefHeight="43.0" prefWidth="189.0" styleClass="login2" stylesheets="" text="Statistique" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <VBox fx:id="periode" layoutX="236.0" layoutY="20.0" prefHeight="510.0" prefWidth="312.0">
+         <children>
+            <Button fx:id="Gevent111" mnemonicParsing="false" onAction="#AddCand" prefHeight="43.0" prefWidth="189.0" styleClass="login2" stylesheets="" text="Ajouter Candidature" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+            <TextField id="iden1" fx:id="iden1" editable="false" visible="false" />
+            <Label text="Fonction" />
+            <TextField id="titre" fx:id="fonction" prefHeight="0.0" prefWidth="322.0" />
+            <Label text="Type_Contrat" />
+            <ComboBox fx:id="type_contrat" editable="true" onAction="#changer" prefWidth="150.0" />
+            <Label text="Horaires" />
+            <ComboBox fx:id="horaires" editable="true" prefWidth="150.0" />
+            <Label text="Mode_salaire" />
+            <TextField id="description" fx:id="Mode_salaire" />
+            <Label text="Periode" />
+            <TextField id="description" fx:id="period" />
+            <Label text="Annuel_mois" />
+            <TextField id="taille_entreprise" fx:id="annuel_mois" accessibleRole="INCREMENT_BUTTON" text="0" />
+            <Label text="Titre" />
+            <ComboBox fx:id="titre" editable="true" prefWidth="150.0" />
+         </children>
+      </VBox>
+      <TableView fx:id="CandidatureTable" layoutX="550.0" layoutY="42.0" onMouseClicked="#getselect" prefHeight="200.0" prefWidth="753.0">
+        <columns>
+            <TableColumn fx:id="id1" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="fonction1" prefWidth="75.0" text="Fonction" />
+          <TableColumn fx:id="type_contrat1" prefWidth="122.0" text="Type_Contrat" />
+            <TableColumn fx:id="horaires1" prefWidth="68.0" text="Horaires" />
+            <TableColumn fx:id="mde_salaire1" prefWidth="104.0" text="Mode_Salaire" />
+            <TableColumn fx:id="periode1" prefWidth="73.0" text="Periode" />
+            <TableColumn fx:id="annuel_mois1" prefWidth="111.0" text="Annuel_mois" />
+            <TableColumn fx:id="titre1" prefWidth="90.0" text="Titre" />
+        </columns>
+      </TableView>
+      <Button id="btnAjouter" fx:id="Modifier" layoutX="625.0" layoutY="449.0" lineSpacing="11.0" mnemonicParsing="false" onAction="#Update" prefHeight="38.0" prefWidth="82.0" text="Modifier" textAlignment="RIGHT" textFill="#2f43ab" textOverrun="LEADING_ELLIPSIS" />
+      <Button id="btnAjouter" fx:id="Delete" layoutX="722.0" layoutY="449.0" lineSpacing="11.0" mnemonicParsing="false" onAction="#Delete" prefHeight="38.0" prefWidth="82.0" text="Supprimer" textAlignment="RIGHT" textFill="#2f43ab" textOverrun="LEADING_ELLIPSIS" />
+      <TextField fx:id="ValeurSelectionner" layoutX="666.0" layoutY="339.0" visible="false" />
+   </children>
+</AnchorPane>

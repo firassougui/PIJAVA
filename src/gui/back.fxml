@@ -31,6 +31,26 @@
                   <Font name="Lato Bold" size="14.0" />
                </font>
             </Button>
+            <Button fx:id="Offre" layoutX="6.0" layoutY="336.0" mnemonicParsing="false" onAction="#GestionOffre" prefHeight="43.0" prefWidth="189.0" styleClass="login2" stylesheets="@styles.css" text="Getion offres" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="Gevent1" layoutX="2.0" layoutY="379.0" mnemonicParsing="false" onAction="#GestionCandidature1" prefHeight="43.0" prefWidth="189.0" styleClass="login2" stylesheets="@styles.css" text="Getion canditature" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="Gevent111" layoutX="2.0" layoutY="415.0" mnemonicParsing="false" onAction="#Statistique" prefHeight="43.0" prefWidth="189.0" styleClass="login2" stylesheets="@styles.css" text="Statistique" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="Gevent11" layoutX="6.0" layoutY="458.0" mnemonicParsing="false" onAction="#Contact" prefHeight="43.0" prefWidth="189.0" styleClass="login2" stylesheets="@styles.css" text="Traitement demande" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
       <ImageView fitHeight="625.0" fitWidth="1045.0" layoutX="197.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">

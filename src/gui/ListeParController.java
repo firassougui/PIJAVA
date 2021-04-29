@@ -50,6 +50,12 @@ private ObservableList<Participation> recdata = FXCollections.observableArrayLis
     private Button pdf;
     @FXML
     private Button back;
+    @FXML
+    private Button home;
+    @FXML
+    private Button events1;
+    @FXML
+    private Button Participationg;
 
     /**
      * Initializes the controller class.
@@ -100,5 +106,9 @@ private ObservableList<Participation> recdata = FXCollections.observableArrayLis
             Parent root= loader.load();
   
             back.getScene().setRoot(root);
+    }
+
+    @FXML
+    private void Participation(ActionEvent event) {
     }
 }

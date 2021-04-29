@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="715.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AjouterCandidatureController">
+   <children>
+      <VBox fx:id="periode" layoutX="226.0" layoutY="10.0" prefHeight="510.0" prefWidth="312.0">
+         <children>
+            <Label contentDisplay="RIGHT" prefHeight="40.0" prefWidth="287.0" text="Ajouter Candidature" textFill="#1749bf">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <TextField id="media" fx:id="iden1" editable="false" visible="false" />
+            <Label text="Fonction" />
+            <TextField id="titre" fx:id="fonction" prefHeight="0.0" prefWidth="322.0" />
+            <Label text="Type_Contrat" />
+            <ComboBox fx:id="type_contrat" editable="true" prefWidth="150.0" />
+            <Label text="Horaires" />
+            <ComboBox fx:id="horaires" editable="true" prefWidth="150.0" />
+            <Label text="Mode_salaire" />
+            <TextField id="description" fx:id="Mode_salaire" />
+            <Label text="Periode" />
+            <TextField id="description" fx:id="period" />
+            <Label text="Annuel_mois" />
+            <TextField id="taille_entreprise" fx:id="annuel_mois" accessibleRole="INCREMENT_BUTTON" text="0" />
+            <Label text="Titre" />
+            <ComboBox fx:id="titre" editable="true" prefWidth="150.0" />
+         </children>
+      </VBox>
+      <Pane layoutX="10.0" layoutY="10.0" prefHeight="705.0" prefWidth="197.0" style="-fx-background-color: #333333;" stylesheets="">
+         <children>
+            <Button fx:id="Gtypeevent" layoutY="240.0" mnemonicParsing="false" onAction="#typeevent" prefHeight="43.0" prefWidth="189.0" styleClass="login2" stylesheets="" text="type des evenement" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="95.0" fitWidth="162.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../image/logo.png" />
+               </image>
+               <styleClass>
+                  <String fx:value="envoyer_btn" />
+                  <String fx:value="content-area-circle-btns" />
+                  <String fx:value="img" />
+               </styleClass>
+            </ImageView>
+            <Button fx:id="Ghome" layoutX="3.0" layoutY="149.0" mnemonicParsing="false" onAction="#Ghome" prefHeight="43.0" prefWidth="189.0" style="-fx-background-color: FFCC00;" styleClass="login3" stylesheets="" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="Gevent" layoutY="290.0" mnemonicParsing="false" onAction="#event" prefHeight="43.0" prefWidth="189.0" styleClass="login2" stylesheets="" text="evenement" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="Offre" layoutY="340.0" mnemonicParsing="false" onAction="#GestionOffre" prefHeight="43.0" prefWidth="189.0" styleClass="login2" stylesheets="" text="Gestion des Offres" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="Gevent1" layoutY="389.0" mnemonicParsing="false" onAction="#GestionCandidature" prefHeight="43.0" prefWidth="189.0" styleClass="login2" stylesheets="" text="Gestions des Candiatures" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="Gevent11" layoutY="438.0" mnemonicParsing="false" onAction="#Contact" prefHeight="43.0" prefWidth="189.0" styleClass="login2" stylesheets="" text="Contacter Employer" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Button id="btnAjouter" fx:id="ajout" layoutX="562.0" layoutY="240.0" lineSpacing="11.0" mnemonicParsing="false" onAction="#Ajouter" prefHeight="38.0" prefWidth="82.0" text="Ajouter" textAlignment="RIGHT" textFill="#2f43ab" textOverrun="LEADING_ELLIPSIS" />
+      <Button fx:id="Gevent111" layoutX="9.0" layoutY="498.0" mnemonicParsing="false" onAction="#Statistique" prefHeight="43.0" prefWidth="189.0" styleClass="login2" stylesheets="" text="Statistique" textFill="WHITE">
+         <font>
+            <Font name="Lato Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

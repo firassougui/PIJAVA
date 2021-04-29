@@ -78,6 +78,12 @@ public class AfficherevenementController implements Initializable {
     private Button back;
     @FXML
     private Button Participationg;
+    @FXML
+    private Button home;
+    @FXML
+    private Button events;
+    @FXML
+    private Button opportunite;
 
     /**
      * Initializes the controller class.
@@ -480,6 +486,14 @@ public class AfficherevenementController implements Initializable {
             Parent root= loader.load();
   
             Participationg.getScene().setRoot(root);
+    }
+
+    @FXML
+    private void opportunite(ActionEvent event) throws IOException {
+          FXMLLoader loader= new FXMLLoader(getClass().getResource("/gui/StartOffre.fxml"));
+            Parent root= loader.load();
+  
+            opportunite.getScene().setRoot(root);
     }
     
 }
