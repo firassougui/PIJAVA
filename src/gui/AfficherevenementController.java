@@ -53,6 +53,7 @@ import services.ParticipationCRUD;
 import services.TypeEventCRUD;
 import net.glxn.qrgen.javase.QRCode;
 import net.glxn.qrgen.core.image.ImageType;
+import tools.MyConnection;
 import static tray.notification.NotificationType.ERROR;
 import tray.notification.TrayNotification;
 
@@ -84,6 +85,10 @@ public class AfficherevenementController implements Initializable {
     private Button events;
     @FXML
     private Button opportunite;
+    @FXML
+    private Button publication;
+    @FXML
+    private Button profil;
 
     /**
      * Initializes the controller class.
@@ -337,8 +342,12 @@ public class AfficherevenementController implements Initializable {
                     HBox hv1 = new HBox();
                     String nom = null;
                         ParticipationCRUD pp = new ParticipationCRUD();
+                        MyConnection jdbcDao = new MyConnection();
+                         int k = jdbcDao.getId();
+                         System.out.println(k);
                     try {
-                        if(pp.getpar(evv.getId(), 1))
+                         
+                        if(pp.getpar(evv.getId(), k ))
                         {
                             nom="annuler";
                         }
@@ -357,11 +366,11 @@ public class AfficherevenementController implements Initializable {
                    
                     
                         try {
-                            if(pc.getpar(evv.getId(), 1))
+                            if(pc.getpar(evv.getId(), k))
                             {
                                 bt.setText("participer");
                                 bt.setStyle("-fx-background-color: #fbb710; -fx-text-fill: black;");
-                                pc.deletepar(evv.getId(), 1);
+                                pc.deletepar(evv.getId(), k);
                                 
                             }
                             else
@@ -369,11 +378,11 @@ public class AfficherevenementController implements Initializable {
                                 bt.setStyle("-fx-background-color: #c9c4cb; -fx-text-fill: black;");
                              java.util.Date date=new java.util.Date();  
                         P.setDate(date.toString());
-                        P.setId_employer(1);
+                        P.setId_employer(k);
                         try {
                             pc.addParticipation(P, evv.getId() );
                             
-                            int x=pc.getIdPBy(evv.getId(), 1);
+                            int x=pc.getIdPBy(evv.getId(), k);
                             System.out.println(x);
                             qrcode(Integer.toString(x));
                         } catch (SQLException ex) {
@@ -491,6 +500,31 @@ public class AfficherevenementController implements Initializable {
     @FXML
     private void opportunite(ActionEvent event) throws IOException {
           FXMLLoader loader= new FXMLLoader(getClass().getResource("/gui/StartOffre.fxml"));
+            Parent root= loader.load();
+  
+            opportunite.getScene().setRoot(root);
+    }
+
+    @FXML
+    private void publica(ActionEvent event) throws IOException {
+                 FXMLLoader loader= new FXMLLoader(getClass().getResource("/gui/Front_Publication.fxml"));
+            Parent root= loader.load();
+  
+            publication.getScene().setRoot(root);
+    }
+
+    @FXML
+    private void profil(ActionEvent event) throws IOException {
+                         FXMLLoader loader= new FXMLLoader(getClass().getResource("/gui/Profile.fxml"));
+            Parent root= loader.load();
+  
+            profil.getScene().setRoot(root);
+        
+    }
+
+    @FXML
+    private void event(ActionEvent event) throws IOException {
+         FXMLLoader loader= new FXMLLoader(getClass().getResource("/gui/afficherevenement.fxml"));
             Parent root= loader.load();
   
             opportunite.getScene().setRoot(root);

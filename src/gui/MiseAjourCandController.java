@@ -35,6 +35,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javax.swing.JOptionPane;
@@ -108,6 +109,20 @@ private ListView<Candidature> list;
     private TextField ValeurSelectionner;
     @FXML
     private Button Gevent111;
+    @FXML
+    private AnchorPane Pane;
+    @FXML
+    private BorderPane mainpain;
+    @FXML
+    private Button Gevent1111;
+    @FXML
+    private Button catpub;
+    @FXML
+    private Button pub;
+    @FXML
+    private Button employer1;
+    @FXML
+    private Button employeur1;
     /**
      * Initializes the controller class.
      */
@@ -181,94 +196,17 @@ int etat=0;
         
          }
     }
-    @FXML
-    private void typeevent(ActionEvent event) {
-    }
-
-    @FXML
-    private void Ghome(ActionEvent event) {
-    }
-
-    @FXML
-    private void event(ActionEvent event) {
-    }
-
-   @FXML
-    private void GestionOffre(ActionEvent event) {
-    try {
-
-            FXMLLoader loader = new FXMLLoader(Main.class.getResource("AddOpport.fxml"));
-            AnchorPane rootLayout = (AnchorPane) loader.load();
-
-            Scene scene = new Scene(rootLayout, 800, 800);
-             Stage stage=new Stage();
-            stage.setScene(scene);
-            stage.show();
-
-        } catch(Exception e) {
-            e.printStackTrace();
-        }
-        
     
-    }
-    @FXML
-    private void GestionCandidature(ActionEvent event) {
-    try {
 
-            FXMLLoader loader = new FXMLLoader(Main.class.getResource("MiseAjourCand.fxml"));
-            AnchorPane rootLayout = (AnchorPane) loader.load();
-
-            Scene scene = new Scene(rootLayout, 800, 800);
-             Stage stage=new Stage();
-            stage.setScene(scene);
-            stage.show();
-
-        } catch(Exception e) {
-            e.printStackTrace();
-        }
-        
     
-    }
+    
   
-    @FXML
-    private void Statistique(ActionEvent event)throws Exception {  
+        
     
-        
+   
  
-       
- 
-try {
+   
 
-            FXMLLoader loader = new FXMLLoader(Main.class.getResource("Statis.fxml"));
-            AnchorPane rootLayout = (AnchorPane) loader.load();
-
-          
-
-        } catch(Exception e) {
-            e.printStackTrace();
-        }
-        
-        }
-
-    @FXML
-    private void Contact(ActionEvent event) {
-         
-       
- 
-try {
-
-            FXMLLoader loader = new FXMLLoader(Main.class.getResource("Mail.fxml"));
-            AnchorPane rootLayout = (AnchorPane) loader.load();
-
-            Scene scene = new Scene(rootLayout, 600, 500);
-             Stage stage=new Stage();
-            stage.setScene(scene);
-            stage.show();
-
-        } catch(Exception e) {
-            e.printStackTrace();
-        }
-    }
  private void loading() {
        
          id1.setCellValueFactory(new PropertyValueFactory<>("id"));
@@ -419,9 +357,100 @@ try {
        loading();
         });
     }
-         
-       
- 
+ @FXML
+    private void typeevent(ActionEvent event) throws IOException {
+          FXMLLoader loader= new FXMLLoader(getClass().getResource("/gui/typeeventback.fxml"));
+            Parent root= loader.load();
+  
+            Gtypeevent.getScene().setRoot(root);
+    }
+
+    @FXML
+    private void Ghome(ActionEvent event) throws IOException {
+        
+          FXMLLoader loader= new FXMLLoader(getClass().getResource("/gui/login.fxml"));
+            Parent root= loader.load();
+  
+            Ghome.getScene().setRoot(root);
+        
+    }
+
+    @FXML
+    private void event(ActionEvent event)  throws IOException {
+          FXMLLoader loader= new FXMLLoader(getClass().getResource("/gui/evenementback.fxml"));
+            Parent root= loader.load();
+  
+            Gevent.getScene().setRoot(root);
+        
+        
+    }
+
+    @FXML
+    private void GestionOffre(ActionEvent event) throws IOException {
+                 FXMLLoader loader= new FXMLLoader(getClass().getResource("/gui/AddOpport.fxml"));
+            Parent root= loader.load();
+  
+            Offre.getScene().setRoot(root);
+    }
+
+    @FXML
+    private void GestionCandidature1(ActionEvent event) throws IOException {
+                 FXMLLoader loader= new FXMLLoader(getClass().getResource("/gui/MiseAjourCand.fxml"));
+            Parent root= loader.load();
+  
+            Gevent1.getScene().setRoot(root);
+        
+
+    }
+
+    @FXML
+    private void Statistique(ActionEvent event) throws IOException {
+             FXMLLoader loader= new FXMLLoader(getClass().getResource("/gui/Statis.fxml"));
+            Parent root= loader.load();
+  
+            Gevent11.getScene().setRoot(root);
+    }
+
+    @FXML
+    private void Contact(ActionEvent event) throws IOException {
+          FXMLLoader loader= new FXMLLoader(getClass().getResource("/gui/EtatDemande.fxml"));
+            Parent root= loader.load();
+  
+            Gevent11.getScene().setRoot(root);
+    }
+
+    @FXML
+    private void cattpub(ActionEvent event) throws IOException {
+          FXMLLoader loader= new FXMLLoader(getClass().getResource("/gui/Home_Categorie.fxml"));
+            Parent root= loader.load();
+  
+            catpub.getScene().setRoot(root);
+    }
+
+    @FXML
+    private void pub1(ActionEvent event) throws IOException {
+               FXMLLoader loader= new FXMLLoader(getClass().getResource("/gui/Home_Publication.fxml"));
+            Parent root= loader.load();
+  
+            pub.getScene().setRoot(root);
+        
+    }
+
+    @FXML
+    private void employerlis(ActionEvent event) throws IOException {
+               FXMLLoader loader= new FXMLLoader(getClass().getResource("/gui/afficherEm.fxml"));
+            Parent root= loader.load();
+  
+            employer1.getScene().setRoot(root);
+    }
+
+    @FXML
+    private void employeurlis(ActionEvent event) throws IOException {
+               FXMLLoader loader= new FXMLLoader(getClass().getResource("/gui/afficheEmployeur.fxml"));
+            Parent root= loader.load();
+  
+            employeur1.getScene().setRoot(root);
+    }
 
     
 }

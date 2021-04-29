@@ -25,13 +25,12 @@
             <TableColumn fx:id="image" prefWidth="120.0" text="image" />
          </columns>
       </TableView>
-      <Pane layoutX="7.0" prefHeight="705.0" prefWidth="197.0" style="-fx-background-color: #333333;" stylesheets="@styles.css">
+      <Button fx:id="ajouter" layoutX="274.0" layoutY="528.0" mnemonicParsing="false" onAction="#addCateg" styleClass="login2" stylesheets="@styles.css" text="ajouter" />
+      <Button fx:id="sup" layoutX="415.0" layoutY="528.0" mnemonicParsing="false" onAction="#delCateg" styleClass="login2" stylesheets="@styles.css" text="supprimer" />
+      <Button layoutX="646.0" layoutY="528.0" mnemonicParsing="false" onAction="#modif" styleClass="login2" stylesheets="@styles.css" text="modifier" />
+      <Button fx:id="exit" layoutX="1093.0" layoutY="565.0" mnemonicParsing="false" onAction="#exit" styleClass="login2" stylesheets="@styles.css" text="retour" />
+      <Pane layoutY="4.0" prefHeight="708.0" prefWidth="197.0" style="-fx-background-color: #333333;">
          <children>
-            <Button fx:id="Gtypeevent" layoutY="240.0" mnemonicParsing="false" onAction="#typeevent" prefHeight="43.0" prefWidth="189.0" styleClass="login2" stylesheets="@styles.css" text="type des evenement" textFill="WHITE">
-               <font>
-                  <Font name="Lato Bold" size="14.0" />
-               </font>
-            </Button>
             <ImageView fitHeight="95.0" fitWidth="162.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" smooth="false">
                <image>
                   <Image url="@../image/logo.png" />
@@ -42,21 +41,62 @@
                   <String fx:value="img" />
                </styleClass>
             </ImageView>
-            <Button fx:id="Ghome" layoutX="3.0" layoutY="149.0" mnemonicParsing="false" onAction="#Ghome" prefHeight="43.0" prefWidth="189.0" style="-fx-background-color: FFCC00;" styleClass="login3" stylesheets="@styles.css" text="Home" textFill="WHITE">
+            <Button fx:id="Gtypeevent" layoutY="321.0" mnemonicParsing="false" onAction="#typeevent" prefHeight="43.0" prefWidth="189.0" styleClass="login2" stylesheets="@styles.css" text="type des evenement" textFill="WHITE">
                <font>
                   <Font name="Lato Bold" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="Gevent" layoutY="290.0" mnemonicParsing="false" onAction="#event" prefHeight="43.0" prefWidth="189.0" styleClass="login2" stylesheets="@styles.css" text="evenement" textFill="WHITE">
+            <Button fx:id="Ghome" layoutX="3.0" layoutY="149.0" mnemonicParsing="false" onAction="#Ghome" prefHeight="43.0" prefWidth="189.0" style="-fx-background-color: FFCC00;" styleClass="login2" stylesheets="@styles.css" text="Front" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="Gevent" layoutY="364.0" mnemonicParsing="false" onAction="#event" prefHeight="43.0" prefWidth="189.0" styleClass="login2" stylesheets="@styles.css" text="evenement" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="Offre" layoutX="6.0" layoutY="417.0" mnemonicParsing="false" onAction="#GestionOffre" prefHeight="43.0" prefWidth="189.0" styleClass="login2" stylesheets="@styles.css" text="Getion offres" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="Gevent1" layoutX="2.0" layoutY="460.0" mnemonicParsing="false" onAction="#GestionCandidature1" prefHeight="43.0" prefWidth="189.0" styleClass="login2" stylesheets="@styles.css" text="Getion canditature" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="Gevent111" layoutX="2.0" layoutY="496.0" mnemonicParsing="false" onAction="#Statistique" prefHeight="43.0" prefWidth="189.0" styleClass="login2" stylesheets="@styles.css" text="Statistique" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="Gevent11" layoutX="6.0" layoutY="539.0" mnemonicParsing="false" onAction="#Contact" prefHeight="43.0" prefWidth="189.0" styleClass="login2" stylesheets="@styles.css" text="Traitement demande" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="catpub" layoutX="4.0" layoutY="582.0" mnemonicParsing="false" onAction="#cattpub" prefHeight="43.0" prefWidth="189.0" styleClass="login2" stylesheets="@styles.css" text="Categories pub" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="pub" layoutX="2.0" layoutY="635.0" mnemonicParsing="false" onAction="#pub1" prefHeight="43.0" prefWidth="189.0" styleClass="login2" stylesheets="@styles.css" text=" Publication" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="employer1" layoutX="2.0" layoutY="278.0" mnemonicParsing="false" onAction="#employerlis" prefHeight="43.0" prefWidth="189.0" styleClass="login2" stylesheets="@styles.css" text="Liste des employer" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="employeur1" layoutX="4.0" layoutY="222.0" mnemonicParsing="false" onAction="#employeurlis" prefHeight="43.0" prefWidth="189.0" styleClass="login2" stylesheets="@styles.css" text="Liste des employeur" textFill="WHITE">
                <font>
                   <Font name="Lato Bold" size="14.0" />
                </font>
             </Button>
          </children>
       </Pane>
-      <Button fx:id="ajouter" layoutX="274.0" layoutY="528.0" mnemonicParsing="false" onAction="#addCateg" styleClass="login2" stylesheets="@styles.css" text="ajouter" />
-      <Button fx:id="sup" layoutX="415.0" layoutY="528.0" mnemonicParsing="false" onAction="#delCateg" styleClass="login2" stylesheets="@styles.css" text="supprimer" />
-      <Button layoutX="646.0" layoutY="528.0" mnemonicParsing="false" onAction="#modif" styleClass="login2" stylesheets="@styles.css" text="modifier" />
-      <Button fx:id="exit" layoutX="1093.0" layoutY="565.0" mnemonicParsing="false" onAction="#exit" styleClass="login2" stylesheets="@styles.css" text="retour" />
    </children>
 </AnchorPane>

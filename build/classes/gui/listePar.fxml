@@ -39,9 +39,9 @@
          </font>
       </Button>
       <Button fx:id="back" layoutX="1122.0" layoutY="613.0" mnemonicParsing="false" onAction="#back" text="Back" />
-      <Pane prefHeight="720.0" prefWidth="181.0" style="-fx-background-color: #FFF;">
+      <Pane layoutX="14.0" layoutY="1.0" prefHeight="720.0" prefWidth="181.0" style="-fx-background-color: #FFF;">
          <children>
-            <ImageView fitHeight="95.0" fitWidth="162.0" layoutX="10.0" layoutY="33.0" pickOnBounds="true" smooth="false">
+            <ImageView fitHeight="95.0" fitWidth="162.0" layoutX="10.0" layoutY="30.0" pickOnBounds="true" smooth="false">
                <image>
                   <Image url="@../image/logo.png" />
                </image>
@@ -51,17 +51,32 @@
                   <String fx:value="img" />
                </styleClass>
             </ImageView>
-            <Button fx:id="home" layoutX="-10.0" layoutY="206.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="172.0" style="-fx-background-color: #fff;" text="Home" textFill="#131212">
+            <Button fx:id="home" layoutX="-10.0" layoutY="206.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="172.0" style="-fx-background-color: #fff;" text="Acceuil" textFill="#131212">
                <font>
                   <Font name="Arial" size="18.0" />
                </font>
             </Button>
-            <Button fx:id="events1" layoutX="5.0" layoutY="254.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="172.0" style="-fx-background-color: #fff;" text="Evenements" textFill="#131212">
+            <Button fx:id="events1" layoutX="5.0" layoutY="254.0" mnemonicParsing="false" onAction="#event" prefHeight="38.0" prefWidth="172.0" style="-fx-background-color: #fff;" text="Evenements" textFill="#131212">
                <font>
                   <Font name="Arial" size="18.0" />
                </font>
             </Button>
             <Button fx:id="Participationg" layoutX="15.0" layoutY="305.0" mnemonicParsing="false" onAction="#Participation" prefHeight="43.0" prefWidth="152.0" style="-fx-background-color: #fff;" text="Participations">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="opportunite" layoutX="15.0" layoutY="354.0" mnemonicParsing="false" onAction="#opportunite" prefHeight="43.0" prefWidth="152.0" style="-fx-background-color: #fff;" text="Opportunitée">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="publication" layoutX="15.0" layoutY="412.0" mnemonicParsing="false" onAction="#publica" prefHeight="43.0" prefWidth="152.0" style="-fx-background-color: #fff;" text="Publications">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="profil" layoutX="15.0" layoutY="478.0" mnemonicParsing="false" onAction="#profil" prefHeight="43.0" prefWidth="152.0" style="-fx-background-color: #fff;" text="Profil">
                <font>
                   <Font name="Arial" size="18.0" />
                </font>

@@ -40,6 +40,14 @@ public class BackController implements Initializable {
     private Button Gevent111;
     @FXML
     private Button Gevent11;
+    @FXML
+    private Button pub;
+    @FXML
+    private Button catpub;
+    @FXML
+    private Button employer1;
+    @FXML
+    private Button employeur1;
 
     /**
      * Initializes the controller class.
@@ -60,7 +68,7 @@ public class BackController implements Initializable {
     @FXML
     private void Ghome(ActionEvent event) throws IOException {
         
-          FXMLLoader loader= new FXMLLoader(getClass().getResource("/gui/afficherevenement.fxml"));
+          FXMLLoader loader= new FXMLLoader(getClass().getResource("/gui/login.fxml"));
             Parent root= loader.load();
   
             Ghome.getScene().setRoot(root);
@@ -109,6 +117,39 @@ public class BackController implements Initializable {
             Parent root= loader.load();
   
             Gevent11.getScene().setRoot(root);
+    }
+
+    @FXML
+    private void cattpub(ActionEvent event) throws IOException {
+          FXMLLoader loader= new FXMLLoader(getClass().getResource("/gui/Home_Categorie.fxml"));
+            Parent root= loader.load();
+  
+            catpub.getScene().setRoot(root);
+    }
+
+    @FXML
+    private void pub1(ActionEvent event) throws IOException {
+               FXMLLoader loader= new FXMLLoader(getClass().getResource("/gui/Home_Publication.fxml"));
+            Parent root= loader.load();
+  
+            pub.getScene().setRoot(root);
+        
+    }
+
+    @FXML
+    private void employerlis(ActionEvent event) throws IOException {
+               FXMLLoader loader= new FXMLLoader(getClass().getResource("/gui/afficherEm.fxml"));
+            Parent root= loader.load();
+  
+            employer1.getScene().setRoot(root);
+    }
+
+    @FXML
+    private void employeurlis(ActionEvent event) throws IOException {
+               FXMLLoader loader= new FXMLLoader(getClass().getResource("/gui/afficheEmployeur.fxml"));
+            Parent root= loader.load();
+  
+            employeur1.getScene().setRoot(root);
     }
     
 }

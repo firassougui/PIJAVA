@@ -56,6 +56,12 @@ private ObservableList<Participation> recdata = FXCollections.observableArrayLis
     private Button events1;
     @FXML
     private Button Participationg;
+    @FXML
+    private Button opportunite;
+    @FXML
+    private Button publication;
+    @FXML
+    private Button profil;
 
     /**
      * Initializes the controller class.
@@ -109,6 +115,43 @@ private ObservableList<Participation> recdata = FXCollections.observableArrayLis
     }
 
     @FXML
-    private void Participation(ActionEvent event) {
+    private void Participation(ActionEvent event) throws IOException {
+          FXMLLoader loader= new FXMLLoader(getClass().getResource("/gui/listePar.fxml"));
+            Parent root= loader.load();
+  
+            Participationg.getScene().setRoot(root);
+    }
+
+    @FXML
+    private void opportunite(ActionEvent event) throws IOException {
+          FXMLLoader loader= new FXMLLoader(getClass().getResource("/gui/StartOffre.fxml"));
+            Parent root= loader.load();
+  
+            opportunite.getScene().setRoot(root);
+    }
+
+    @FXML
+    private void publica(ActionEvent event) throws IOException {
+                 FXMLLoader loader= new FXMLLoader(getClass().getResource("/gui/Front_Publication.fxml"));
+            Parent root= loader.load();
+  
+            publication.getScene().setRoot(root);
+    }
+
+    @FXML
+    private void profil(ActionEvent event) throws IOException {
+                         FXMLLoader loader= new FXMLLoader(getClass().getResource("/gui/Profile.fxml"));
+            Parent root= loader.load();
+  
+            profil.getScene().setRoot(root);
+        
+    }
+
+    @FXML
+    private void event(ActionEvent event) throws IOException {
+         FXMLLoader loader= new FXMLLoader(getClass().getResource("/gui/afficherevenement.fxml"));
+            Parent root= loader.load();
+  
+            events1.getScene().setRoot(root);
     }
 }
